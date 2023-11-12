@@ -1,4 +1,4 @@
-// app.js (or index.js)
+// app.js
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -9,7 +9,7 @@ const routes = require('./routes'); // Assuming your routes are in a 'routes' fo
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/your-database', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/database', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Middleware
 
